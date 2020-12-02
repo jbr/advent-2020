@@ -4,13 +4,13 @@ const INPUT: &str = include_str!("../input.txt");
 const TARGET: usize = 2020;
 
 fn main() {
-    let mut compliments_and_products: HashMap<usize, usize> = HashMap::new();
-    let mut seen_numbers: Vec<usize> = Vec::with_capacity(200);
+    let mut compliments = HashMap::new();
+    let mut seen_numbers = Vec::new();
 
     for line in INPUT.lines() {
-        let number = line.parse().unwrap();
+        let number = line.parse::<usize>().unwrap();
 
-        if let Some(product) = compliments_and_products.get(&number) {
+        if let Some(product) = compliments.get(&number) {
             println!("{}", product * number);
             return;
         }
@@ -18,7 +18,7 @@ fn main() {
         for other_number in &seen_numbers {
             let sum = number + other_number;
             if sum < TARGET {
-                compliments_and_products.insert(TARGET - sum, number * other_number);
+                compliments.insert(TARGET - sum, number * other_number);
             }
         }
 
