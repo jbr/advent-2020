@@ -1,4 +1,4 @@
-# advent-2020
+# [advent-2020](https://adventofcode.com/2020)
 
 ## [01: repair report](https://github.com/jbr/advent-2020/blob/main/report-repair/src/main.rs)
 
