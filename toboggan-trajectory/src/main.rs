@@ -10,8 +10,8 @@ fn main() {
 
 fn check_slope(input: &[u8], x: usize, y: usize) -> usize {
     input
-        .split(|c| c == &b'\n')
-        .filter(|line| line.len() > 0)
+        .split(|c| *c == b'\n')
+        .filter(|line| !line.is_empty())
         .step_by(y)
         .enumerate()
         .filter(|(line_number, line)| line[(*line_number * x) % line.len()] == b'#')
