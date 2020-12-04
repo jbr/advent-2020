@@ -14,4 +14,6 @@ I tried a few ways of doing this without regex, and they were all worse than jus
 
 Although I barely got this one in within the 24h time limit, I ended up enjoying writing it a lot. Iterator is one of my favorite rust types, and sold me on the language early on. The promise of functional expression with zero runtime computational cost is really powerful, and I don't have enough opportunities to use them.  This ended up being quite straightforward to type out, and I'm pretty happy with the end product. It was tempting to express the entire thing without a single let binding, but I decided this was slightly more readable.
 
+Note: It seems like it's probably possible to do this in a single pass through the input, which would be more efficient at a small readability cost. For each row in the input, you'd iterate over the list of slopes and accumulate the trees for each of those slopes, instead of iterating over the slopes and then iterating over the full input for each of them.
+
 <!-- ## [04: X](https://github.com/jbr/advent-2020/blob/main/X/src/main.rs) -->
