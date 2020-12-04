@@ -14,6 +14,6 @@ fn check_slope(input: &[u8], x: usize, y: usize) -> usize {
         .filter(|line| !line.is_empty())
         .step_by(y)
         .enumerate()
-        .filter(|(line_number, line)| line[(*line_number * x) % line.len()] == b'#')
+        .filter(|(step_number, line)| line[(*step_number * x) % line.len()] == b'#')
         .count()
 }
