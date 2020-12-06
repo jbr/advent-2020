@@ -1,2 +1,7 @@
 [workspace]
-members = ["password-philosophy", "report-repair", "toboggan-trajectory"]
+members = [
+  "password-philosophy",
+  "report-repair",
+  "toboggan-trajectory",
+  "binary-boarding"
+]
