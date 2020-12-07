@@ -1,5 +1,7 @@
 # [advent-2020](https://adventofcode.com/2020)
 
+In general, I'm trying to strike a good balance between readability and cpu/memory usage, generally trying to stick to idiomatic rust and only pulling in libraries where necessary/appropriate
+
 ## [01: repair report](https://github.com/jbr/advent-2020/blob/main/report-repair/src/main.rs)
 
 I wasn't sure if it was legit to pre-parse the input data, so the input is treated as a string. Given that constraint I think it's fairly efficient.
